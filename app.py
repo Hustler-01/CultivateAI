@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, render_template
 import numpy as np
 import pandas
 import pickle
@@ -53,18 +53,6 @@ def predict():
     except Exception as e:
         print(f"Error occurred: {e}")
         return str(e)
-
-
-@app.route('/predict_api', methods=['POST'])
-def predict_api():
-    '''
-    For direct API calls through request
-    '''    
-    data = request.get_json(force=True)
-    prediction = model.predict([np.array(list(data.values))])
-
-    output = prediction[0]
-    return jsonify(output)
 
 
 # python main
