@@ -6,19 +6,29 @@ The Crop Recommendation System aims to assist farmers in identifying the most su
 
 ### 2. Introduction
 Agriculture plays a pivotal role in sustaining livelihoods and ensuring food security. However, selecting the appropriate crop to grow often involves complex decisions influenced by diverse factors such as soil characteristics, climatic conditions, and market demands. Traditionally, these decisions have relied heavily on experience and intuition, which can lead to inefficiencies and suboptimal yields.
+
 This project seeks to develop a Crop Recommendation System that bridges this gap using data-driven insights. By employing supervised learning algorithms, the system predicts the most suitable crop for a given set of input parameters, thereby empowering farmers to make informed decisions.
 The primary motivation for this project stems from the increasing challenges faced by the agricultural sector due to climate change, population growth, and resource constraints. The implementation of such a system has the potential to revolutionize agricultural practices by enhancing productivity, ensuring resource efficiency, and supporting sustainable farming.
 
 ### 3. Data Description
 The dataset used for this project was sourced from kaggle (https://www.kaggle.com/datasets/atharvaingle/crop-recommendation-dataset) and contains the following features:
+
 Nitrogen (N): Nitrogen content in the soil (kg/ha).
+
 Phosphorus (P): Phosphorus content in the soil (kg/ha).
+
 Potassium (K): Potassium content in the soil (kg/ha).
+
 Temperature (°C): Average temperature during the growing season.
+
 Humidity (%): Atmospheric humidity.
+
 pH: Soil pH value.
+
 Rainfall (mm): Annual rainfall received.
+
 Crop: Target variable indicating the suitable crop.
+
 This dataset consists of 2,200 rows and 8 features, with crops classified into 22 distinct categories.
 
 ### 4. Methodology
